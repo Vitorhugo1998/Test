@@ -10,44 +10,39 @@
 </head>
 
 <body>
-    <header class="container-fluid p-2 bg-warning text-center"></header>
-         
-        <nav class="navbar navbar-expand-lg bg-warning">
+    <header class="container-fluid bg-warning text-center py-5">
+        <h1 class="display-4 mb-4">TopzeiraTripp</h1>
+        <p class="lead mb-4"></p>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">TopzeiraTripp</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end bg-warning"  id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Taxas</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      contato
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="navbar-brand" href="#">TopzeiraTripp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Taxas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contato
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Formulário de Contato</a></li>
+                                <li><a class="dropdown-item" href="#">Suporte</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Outros</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
-
-            <h1> 
-    
-               Venha realizar a viagem dos seus sonhos !!! 
-         
-            </h1>
-     
+        </nav>
     </header>
     <section class="containre-fluid bg-light text-center">
         <h3>
@@ -174,8 +169,8 @@ Venha descobrir o mundo com a Toppzeiratrip e permita-nos ser parte das suas mem
     </section>
 
  <hr>
- <section class="container-fluid bg-light">
-    <h2 class="text-center">
+ <section class="container-fluid bg-light text-center">
+    <h2 class="mb-4">
         Orçamento e cadastro
     </h2>
     <form class="p-4 bg-light mx-auto w-50">
@@ -189,7 +184,7 @@ Venha descobrir o mundo com a Toppzeiratrip e permita-nos ser parte das suas mem
             <input type="email" class="form-control" id="email" name="Email" required>
         </div>
         
-        <div class="row">
+        <div class="row mb-3">
             <div class="col">
                 <label for="dataIda" class="form-label">Data de Ida</label>
                 <input type="date" class="form-control" id="dataIda" name="dataIda">
@@ -203,46 +198,55 @@ Venha descobrir o mundo com a Toppzeiratrip e permita-nos ser parte das suas mem
         <button type="submit" class="btn btn-primary mt-3">Enviar</button>
     </form>
 
-    <fieldset class="mt-auto">
+    <fieldset class="mt-4 text-start">
         <legend>Quais serviços pretende contratar?</legend>
-        <label>
-            <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
-        </label>
-        <label>
-            <br> <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
-        </label>
-        <label>
-            <br> <input type="checkbox" name="aluguelVeiculos" value="Veículo">Reserva de veículos
-        </label>
-        <label>
-            <br> <input type="checkbox" name="translado" value="Translado">Translado
-        </label>
-        <label>
-            <br> <input type="checkbox" name="seguro" value="seguro">Seguro Viagem
-        </label>
-        <br><label> Diga para nós o que não pode faltar em sua viagem</label> <br> 
-        <textarea rows="5" name="Comentário"></textarea> <br> <br>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="passagens" value="Passagens" id="passagens">
+            <label class="form-check-label" for="passagens">Compra de passagens</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="hospedagem" value="Hospedagem" id="hospedagem">
+            <label class="form-check-label" for="hospedagem">Reserva de hospedagem</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="aluguelVeiculos" value="Veículo" id="aluguelVeiculos">
+            <label class="form-check-label" for="aluguelVeiculos">Reserva de veículos</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="translado" value="Translado" id="translado">
+            <label class="form-check-label" for="translado">Translado</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="seguro" value="seguro" id="seguro">
+            <label class="form-check-label" for="seguro">Seguro Viagem</label>
+        </div>
+        <label class="mt-3">Diga para nós o que não pode faltar em sua viagem</label>
+        <textarea rows="5" class="form-control" name="Comentário"></textarea>
     </fieldset>
 
-    <fieldset class="mt-4">
+    <fieldset class="mt-4 text-start">
         <legend>Escolha a forma de pagamento</legend>
-        <label>
-            <input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
-        </label>
-        <label>
-            <br><input type="radio" name="formaPagamento" value="Pix">Pix
-        </label>
-        <label>
-            <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
-        </label>
-        <label>
-            <br><input type="radio" name="formaPagamento" value="Transferencia bancaria">Transferência bancária
-        </label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="formaPagamento" value="Cartão de crédito" id="cartaoCredito">
+            <label class="form-check-label" for="cartaoCredito">Cartão de crédito</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="formaPagamento" value="Pix" id="pix">
+            <label class="form-check-label" for="pix">Pix</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="formaPagamento" value="Boleto" id="boleto">
+            <label class="form-check-label" for="boleto">Boleto</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="formaPagamento" value="Transferencia bancaria" id="transferencia">
+            <label class="form-check-label" for="transferencia">Transferência bancária</label>
+        </div>
     </fieldset>
 
-    <fieldset class="mt-4">
+    <fieldset class="mt-4 text-start">
         <legend>Prazo para pagamento</legend>
-        <select name="prazoPagamento">
+        <select class="form-select" name="prazoPagamento">
             <option value="aVista">À vista</option>
             <option value="5x">5x sem juros</option>
             <option value="10x">10x com juros</option>
@@ -252,7 +256,9 @@ Venha descobrir o mundo com a Toppzeiratrip e permita-nos ser parte das suas mem
 
 <br><br>
 
-<button class="btn btn-primary">Enviar</button>
+<div class="text-center">
+    <button class="btn btn-primary">Enviar</button>
+</div>
 
 <footer>
     <p>&copy; <span id="2024"></span> TopzeiraTripp a garantia da trip perfeita.</p>
